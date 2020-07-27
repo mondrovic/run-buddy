@@ -1,17 +1,49 @@
-body {
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+body{
     font-family: Helvetica, Arial, sans-serif;
     color: #39a6b2;
 }
 
 /* apply styles to <header> */
-header {
+header{
     padding: 20px 35px;
     background-color: #39a6b2;
 }
 
-header h1 {
+/* applies styling specifically to large banner/logo */
+header h1{
     font-weight: bold;
     font-size: 36px;
-    color: yellow;
+    color: #fce138;
     margin: 0;
+    display: inline;
+}
+
+/* applies color styling and removes underline from links and on click color changes */
+header a{
+      text-decoration: none;
+      color: #fce138;
+}
+
+/* move clickable links and add a margin */
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+
+/* change list items to inline */
+header nav ul li{
+    display: inline;
+}
+
+/* apply styling to individual links */
+
+header nav ul li a{
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
 }
