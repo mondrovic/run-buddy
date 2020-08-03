@@ -150,8 +150,11 @@ section{
     text-align: center;
 }
 
-.step{
+.steps{
     background: #fce138;
+}
+
+.step{
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
