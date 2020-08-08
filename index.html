@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="./assets/css/style.css"/>
         <title>Run Buddy</title>
     </head>
@@ -28,6 +29,9 @@
                     <li>
                         <a href="#reach-out">Reach Out</a>
                     </li>
+                    <li>
+                        <a href="#service-plans">Service Plans</a>
+                    </li>
                 </ul>
             </nav>
         </header>
@@ -35,7 +39,7 @@
         <!-- hero/jumbotron -->
         <section class="hero">
             <div class="hero-cta">
-                <h3> Start Building Habits.</h3>
+                <h2> Start Building Habits.</h2>
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium nesciunt numquam animi possimus tempore repellendus accusantium, provident quos! Esse commodi quaerat culpa similique pariatur facere alias est architecto doloribus eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam velit amet id natus praesentium ducimus, aut laudantium enim nisi? Cumque nihil quam ab quasi corporis atque repellendus a modi quas!
                 </p>
@@ -53,17 +57,23 @@
                     <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input"/>
                     <p>
                         Have you worked out with a trainer before?
-                        <input type="radio" name="trainer-confirm" id="trainer-yes"/>
-                        <label for="trainer-yes">Yes</label>
-                        <input type="radio" name="trainer-confirm" id="trainer-no"/>
-                        <label for="trainer-no">No</label>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                            <label for="trainer-yes">Yes</label>
+                        </span>
+                        <span class="radio-wrapper">
+                            <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                            <label for="trainer-no">No</label>
+                        </span>
                     </p>
                     <p>
                         <!-- Wrap text in label to make check easier to press -->
-                        <label for="checkbox">
-                            I acknowledge that I am at least 18 years of age.
-                        </label>
-                        <input type="checkbox" name="age-confirm" id="age-confirm"/>
+                        <span class="checkbox-wrapper">
+                            <input type="checkbox" name="age-confirm" id="age-confirm"/>
+                            <label for="age-confirm">
+                                I acknowledge that I am at least 18 years of age.
+                            </label>                            
+                        </span>
                     </p>
                     <button type="submit">
                         Get Running!
@@ -74,80 +84,207 @@
 
         <!-- "what we do" section -->
         <section id="what-we-do" class="intro">
-            <h2 class="section-title primary-border">What We Do</h2>
-            <p>
-                Lanyard lugsail ballast avast red ensign smartly starboard booty hardtack gabion.
-            </p>
+            <div class="flex-row">
+                <h2 class="section-title primary-border">
+                    What We Do
+                </h2>
+            </div>
+            <div class="flex-row">
+                <p>
+                    Lanyard lugsail ballast avast red ensign smartly starboard booty hardtack gabion.
+                </p>
+            </div>
         </section>
 
         <!-- "what you do" section" -->
         <section id="what-you-do" class="steps">
             <h2 class="section-title secondary-border">What You Do</h2>
-            <div>
-                <img src="./assets/images/step-1.svg" alt="" />
-                <h3>Step 1: <span class="step-text">Fill out the Form Above</span></h3>
-                <p>You're already here, so why not?</p>
+            <div class="step">
+                <h3>Step 1.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-1.svg" alt=""/>
+                    </div>
+                    <div class="step-text">
+                        <h4>Fill Out The Form Above</h4>
+                        <p>You're already here, so why not?</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="./assets/images/step-2.svg" alt="" />
-                <h3>Step 2: <span class="step-text">Consult with One of Our Trainers</span></h3>
-                <p>Are you here to build muscle, lose weight, or just feel good?</p>
+            <div class="step">
+                <h3>Step 2.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-2.svg" alt=""/>
+                    </div>
+                    <div class="step-text">
+                        <h4>Consult with One of Our Trainers</h4>
+                        <p> Are you here to build muscle, lose weight, or just feel good?</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="./assets/images/step-3.svg" alt="" />
-                <h3>Step 3: <span class="step-text">Get Running.</span></h3>
-                <p> Hit the ground running (literally) once your trainer lays out your plan.</p>
+            <div class="step">
+                <h3>Step 3.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-3.svg" alt=""/>
+                    </div>
+                    <div class="step-text">
+                        <h4>Get Running</h4>
+                        <p>Hit the ground running (literally) once your trainer lays out your plan</p>
+                    </div>
+                </div>
             </div>
-            <div>
-                <img src="./assets/images/step-4.svg" alt="" .>
-                <h3>Step 4: <span class="step-text">See Results.</span></h3>
-                <p>Bi-Weekly checkins with your trainer will keep you focused</p>
+            <div class="step">
+                <h3>Step 4.</h3>
+                <div class="step-info">
+                    <div class="step-img">
+                        <img src="./assets/images/step-4.svg" alt="" />
+                    </div>
+                    <div class="step-text">
+                        <h4>See Results.</h4>
+                        <p>Bi-weekly checkins with your instructor will keep you focused</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- "meet the trainers" section -->
-        <section id="your-trainers" class="trainers">
-            <h2 class="section-title primary-border">Meet The Trainers</h2>
+        <section id="your-trainers">
+            <div class="flex-row">
+                <h2 class="section-title primary-border">
+                    Meet The Trainers
+                </h2>
+            </div>
+            
             <!-- first trainer -->
-            <article class="trainer">
-                <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron"/>
-                <div class="trainer-bio text-left">
-                    <h3>Arron Stephens</h3>
-                    <h4>Speed / Strength</h4>
-                    <p>
-                        Splice the main brace port lass haul wind starboard swing the lead chandler spyglass chase guns barque. Jolly Roger prow spirits broadside landlubber or just lubber belay lugsail black spot rum strike colors. Clap of thunder heave to bilged on her anchor hulk chase snow gun fire ship pirate maroon.
-                    </p>
-                </div>
-            </article>
+            <div class="trainers">      
+                <article class="trainer">
+                    <div class="trainer-img trainer-1">
+                        <div>
+                            <h3>Arron Stephens</h3>
+                            <h4>Speed / Strength</h4>
+                        </div>
+                    </div>
+                    <div class="trainer-bio">
+                        <h3>Arron Stephens</h3>
+                        <h4>Speed / Strength</h4>
+                        <p>
+                            Splice the main brace port lass haul wind starboard swing the lead chandler spyglass chase guns barque. Jolly Roger prow spirits broadside landlubber or just lubber belay lugsail black spot rum strike colors. Clap of thunder heave to bilged on her anchor hulk chase snow gun fire ship pirate maroon.
+                        </p>
+                    </div>
+                </article>
 
-            <!-- second trainer -->
-            <article class="trainer">
-                <div class="trainer-bio text-right">
-                    <h3>Joanna Gill</h3>
-                    <h4>Endurance</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nulla excepturi omnis harum, mollitia officiis eligendi velit praesentium eos perspiciatis repellendus incidunt ab delectus optio illo et fugit ex? Asperiores.                        
-                    </p>
-                </div>
-                <img src="./assets/images/trainer-2.jpg" alt="Joanna Gill cooling off after a workout"/>
-            </article>
+                <!-- second trainer -->
+                <article class="trainer">
+                    <div class="trainer-img trainer-2">
+                        <div>
+                            <h3>Joanna Gill</h3>
+                            <h4>Endurance</h4>
+                        </div>
+                    </div>
+                    <div class="trainer-bio">
+                        <h3>Joanna Gill</h3>
+                        <h4>Endurance</h4>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga nulla excepturi omnis harum, mollitia officiis eligendi velit praesentium eos perspiciatis repellendus incidunt ab delectus optio illo et fugit ex? Asperiores.                        
+                        </p>
+                    </div>
+                </article>
 
-            <!-- third trainer -->
-            <article class="trainer">
-                <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights"/>
-                <div class="trainer-bio text-left">
-                    <h3>Harry "The Headband" Smith</h3>
-                    <h4>Strength</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, totam ut? Sit nisi laborum dolor, labore ullam corporis alias, beatae, in iusto dolorum nostrum possimus molestias quisquam perspiciatis cumque assumenda?
-                    </p>
-                </div>
-            </article>
+                    <!-- third trainer -->
+                <article class="trainer">
+                    <div class="trainer-img trainer-3">
+                        <div>
+                            <h3 class="trainer-name">Harry "The Headband" Smith</h3>
+                            <h4 class="trainer-role">Strength</h4>
+                        </div>
+                    </div>
+                    <div class="trainer-bio">
+                        <h3>Harry "The Headband" Smith</h3>
+                        <h4>Strength</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, totam ut? Sit nisi laborum dolor, labore ullam corporis alias, beatae, in iusto dolorum nostrum possimus molestias quisquam perspiciatis cumque assumenda?
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- "service plans" section -->
+        <section id="service-plans" class="services">
+            <h2 class="section-title secondary-border">
+                Our Service Plans
+            </h2>
+            <div class="service-grid-wrapper">
+                <div class="service-grid-container">
+                    <!-- headers -->
+                    <div class="service-grid-item grid-head basic">
+                        Basic
+                    </div>
+                    <div class="service-grid-item grid-head premium">
+                        Premium
+                    </div>
+
+                    <!-- body -->
+                    <div class="service-grid-item basic">
+                        Support Offered Between 9-5
+                    </div>
+                    <div class="service-grid-item premium">
+                        24/7 Plan Support
+                    </div>
+                    <div class="service-grid-item basic">
+                        Bi-Weekly Trainer Calls
+                    </div>
+                    <div class="service-grid-item premium">
+                        Weekly Trainer Calls
+                    </div>
+                    <div class="service-grid-item basic">
+                        N/A
+                    </div>
+                    <div class="service-grid-item premium">
+                        Discounts At Select Running Stores
+                    </div>
+                    <div class="service-grid-item both">
+                        Subscription to Run Buddy's Health Magazine!
+                    </div>
+                    <div class="service-grid-item grid-price basic">
+                        $10/mo
+                    </div>
+                    <div class="service-grid-item grid-price premium">
+                        $25/mo
+                    </div>
+                    <div class="service-grid-item cancel">
+                        Cancel At Any Time!
+                    </div> <!-- div service-grid-container -->
+                </div> <!-- div service-grid-wrapper -->
+            </div>
         </section>
 
         <!-- "reach out" section -->
         <section class="contact" id="reach-out">
-            <h2 class="section-title secondary-border">Reach Out</h2>
+            <div class="flex-row">
+                <h2 class="section-title secondary-border">
+                    Reach Out
+                </h2>
+            </div>
             <div class="contact-info">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.8150296955514!2d-112.58329844891246!3d33.375894780701095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b34f175790bc3%3A0x3d472f56039d5cf4!2s748%20E%20Arizona%20Ave%2C%20Buckeye%2C%20AZ%2085326!5e0!3m2!1sen!2sus!4v1596163256502!5m2!1sen!2sus"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <div>
+                    <h3>Run Buddy</h3>
+                    <p>
+                        Any questions or concerns before signing up?
+                        <br />
+                        Let us know and we'll be happy to talk to you!
+                    </p>
+
+                    <address>                        
+                    55 Main Street <br/>
+                    Some Town, CA <br/>
+                    12345 <br />
+                    P: 555.RUN.BUDZ (555.786.2839) <br/>
+                    E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+                    </address>                
+                </div>
+
                 <div class="contact-form">
                     <h3>Contact Us</h3>
                     <form>
@@ -160,21 +297,7 @@
                         <button type="submit">Submit</button>
                     </form>
                 </div>
-                <div>
-                    <h3>Run Buddy</h3>
-                    <p>
-                        Any questions or concerns before signing up?
-                        <br />
-                        Let us know and we'll be happy to talk to you!
-                        <address>
-                            55 Main Street <br/>
-                            Some Town, CA <br/>
-                            12345 <br />
-                            P: 555.RUN.BUDZ (555.786.2839) <br/>
-                            E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
-                        </address>
-                    </p>
-                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.8150296955514!2d-112.58329844891246!3d33.375894780701095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b34f175790bc3%3A0x3d472f56039d5cf4!2s748%20E%20Arizona%20Ave%2C%20Buckeye%2C%20AZ%2085326!5e0!3m2!1sen!2sus!4v1596163256502!5m2!1sen!2sus"frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </section>
 
